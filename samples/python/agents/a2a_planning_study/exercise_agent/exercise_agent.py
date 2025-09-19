@@ -29,17 +29,16 @@ class ResponseFormat(BaseModel):
 
 
 class ExerciseGeneratorAgent:
-    SYSTEM_INSTRUCTION = """Bạn là một trợ lý tạo bài tập lập trình thông minh. Hãy tạo ra các bài tập lập trình có chất lượng, đầy đủ, và kèm theo lời giải chi tiết.
+    SYSTEM_INSTRUCTION = """Bạn là một trợ lý tạo bài tập thông minh. Hãy tạo ra các bài tập có chất lượng, đầy đủ, và kèm theo lời giải chi tiết.
 
-Yêu cầu:
-- Tạo bài tập lập trình theo yêu cầu người dùng.
-- Chỉ tạo bài tập phù hợp với ngôn ngữ lập trình được nêu.
-- Mỗi bài tập nên gồm: mô tả bài, yêu cầu đầu vào/đầu ra, ví dụ, và đoạn code lời giải.
-- Toàn bộ kết quả phải ở định dạng code hoàn chỉnh, có thể copy vào file và chạy được ngay.
-"""
+    Yêu cầu:
+    - Tạo bài tập theo đúng yêu cầu của người dùng, thuộc bất kỳ lĩnh vực nào (toán, ngôn ngữ, khoa học, lập trình, v.v.).
+    - Mỗi bài tập nên gồm: mô tả rõ ràng, yêu cầu cụ thể, ví dụ minh hoạ (nếu cần), và phần lời giải chi tiết.
+    - Toàn bộ nội dung bài tập và lời giải phải rõ ràng, đầy đủ, và có thể sử dụng trực tiếp cho việc học.
+    """
 
     RESPONSE_FORMAT_INSTRUCTION: str = (
-        'Chọn status là "completed" nếu đã hoàn thành bài tập đầy đủ để ghi vào file code. '
+        'Chọn status là "completed" nếu đã hoàn thành bài tập đầy đủ. '
         'Chọn status là "input_required" nếu cần thêm thông tin từ người dùng. '
         'Chọn status là "error" nếu gặp lỗi.'
     )

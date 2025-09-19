@@ -12,13 +12,13 @@ from a2a.types import (
     TaskStatusUpdateEvent,
 )
 from a2a.utils import new_agent_text_message, new_task, new_text_artifact
-# Import agent mới có chức năng tạo bài tập
+
 from agents.a2a_planning_study.exercise_agent.exercise_agent import ExerciseGeneratorAgent
 
 logger = logging.getLogger(__name__)
 
 class ExerciseGeneratorAgentExecutor(AgentExecutor):
-    """ExerciseGeneratorAgentExecutor sử dụng agent để tạo bài tập và xuất ra mã nguồn."""
+    """ExerciseGeneratorAgentExecutor sử dụng agent để tạo bài tập """
 
     def __init__(self, mcp_tools: list[Any]):
         """Khởi tạo ExerciseGeneratorAgentExecutor với danh sách công cụ MCP."""

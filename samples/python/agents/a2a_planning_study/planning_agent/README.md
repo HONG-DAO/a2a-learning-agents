@@ -3,7 +3,7 @@
 Personalized study planning agent running as an A2A server (Uvicorn).
 
 ## Requirements
-- Python 3.12, uv
+- Python 3.13, uv
 - Either `GOOGLE_API_KEY` or Vertex AI configuration (`GOOGLE_GENAI_USE_VERTEXAI=TRUE`, `GOOGLE_CLOUD_PROJECT`, `GOOGLE_CLOUD_LOCATION`)
 
 ## Environment variables

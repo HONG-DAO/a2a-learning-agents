@@ -16,7 +16,7 @@ The Host Agent provides a Gradio UI for chat-based testing. Both remote agents r
 
 ### Prerequisites
 
-- Python 3.12
+- Python 3.13
 - uv (package manager): see `https://docs.astral.sh/uv/getting-started/installation/`
 - Node.js (optional, if you want to run example MCP servers)
 

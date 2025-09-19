@@ -29,7 +29,7 @@ class ResponseFormat(BaseModel):
 
 
 class StudyPlannerAgent:
-    SYSTEM_INSTRUCTION = """You are a study planning assistant. Your job is to help users plan their study schedules, recommend study resources, and break down complex topics into manageable learning goals. Ask clarifying questions if needed. Be specific, actionable, and encouraging in your recommendations."""
+    SYSTEM_INSTRUCTION = """You are a study planning assistant. Your job is to help users plan their study schedules, recommend study resources, and break down complex topics into manageable learning goals. Be specific, actionable, and encouraging in your recommendations."""
 
     RESPONSE_FORMAT_INSTRUCTION: str = (
         'Select status as "completed" if the request is fully addressed and no further input is needed. '
